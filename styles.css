@@ -17,24 +17,27 @@ body {
     min-height: 100vh;
 }
 
-.header {
+/* Update: Header should be styled properly */
+header {
     grid-area: header;
     background-color: #63B3ED;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    flex-direction: column; /* Vertically align the content */
     padding: 20px;
 }
 
-.header-content h1 {
+header h1 {
     font-size: 36px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
-.header-content p {
+header p {
     font-size: 18px;
+    margin: 0;
 }
 
 .sidebar {
@@ -87,7 +90,7 @@ body {
     color: #718096;
 }
 
-.footer {
+footer {
     grid-area: footer;
     background-color: #2C5282;
     color: #FFFFFF;
